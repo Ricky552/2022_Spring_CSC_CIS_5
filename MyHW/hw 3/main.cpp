@@ -10,16 +10,23 @@
 using namespace std;
 
 int main() {
+    // storing integers for sale state and county tax 
+    float tsales = 95;
+    float state = .04;
+    float county = .02;
     
-    double tsales = 95;
-    double state = .04;
-    double county = .02;
+    //dividing total sales with state tax
+    float total_state = tsales * state;
+    //cout<< total_state<<endl;
     
-    double total = tsales / state;
+    //dividing total sales with state county
+    float total_county = tsales * county;
+    //cout<< total_county<<endl;
     
-    cout << total;
+    int total = total_county + total_state;
     
+    cout << "Total sales tax: "<< total;
     
     return 0;
-    }
+     }
 
